@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.abdelrahmman.bottomnavigationview.ui.home.HomeFragment"
+        android:label="@string/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_homeFirstFragment"
+            app:destination="@id/homeFirstFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFirstFragment"
+        android:name="com.abdelrahmman.bottomnavigationview.ui.home.HomeFirstFragment"
+        android:label="@string/fragment_home_first" >
+
+        <action
+            android:id="@+id/action_homeFirstFragment_to_homeSecondFragment"
+            app:destination="@id/homeSecondFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+        <action
+            android:id="@+id/action_homeFirstFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeSecondFragment"
+        android:name="com.abdelrahmman.bottomnavigationview.ui.home.HomeSecondFragment"
+        android:label="@string/fragment_home_second" >
+
+        <action
+            android:id="@+id/action_homeSecondFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

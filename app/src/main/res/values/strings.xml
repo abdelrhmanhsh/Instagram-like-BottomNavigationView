@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">BottomNavigationView</string>
+
+    <!-- BottomNavigationView -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+
+    <!-- Fragments -->
+    <string name="fragment_account">Account</string>
+    <string name="fragment_color_blue">Color Blue</string>
+    <string name="fragment_color_red">Color Red</string>
+    <string name="fragment_edit_account">Edit Account</string>
+    <string name="fragment_edit_success">Edit Success</string>
+    <string name="fragment_home">Home</string>
+    <string name="fragment_home_first">Home First</string>
+    <string name="fragment_home_second">Home Second</string>
+    <string name="fragment_search">Search</string>
+    <string name="fragment_view_account">View Account</string>
+
+
+</resources>

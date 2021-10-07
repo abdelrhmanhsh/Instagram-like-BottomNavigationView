@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_search"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.abdelrahmman.bottomnavigationview.ui.search.SearchFragment"
+        android:label="@string/search" >
+
+        <action
+            android:id="@+id/action_searchFragment_to_colorBlueFragment"
+            app:destination="@id/colorBlueFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+        <action
+            android:id="@+id/action_searchFragment_to_colorRedFragment"
+            app:destination="@id/colorRedFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/colorBlueFragment"
+        android:name="com.abdelrahmman.bottomnavigationview.ui.search.ColorBlueFragment"
+        android:label="@string/fragment_color_blue" >
+
+        <action
+            android:id="@+id/action_colorBlueFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/nav_search"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/colorRedFragment"
+        android:name="com.abdelrahmman.bottomnavigationview.ui.search.ColorRedFragment"
+        android:label="@string/fragment_color_red" >
+
+        <action
+            android:id="@+id/action_colorRedFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/nav_search"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>
